@@ -16,9 +16,20 @@ main {
   padding: 20px;
 }
 
-.name-input {
-  font-size: 20px;
+.name-input, 
+.due-date-input {
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 20px;
+  border: 1px solid rgb(241, 174, 241); /* Add border style and color */
 }
+
+.name-input:focus, 
+.due-date-input:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #673ab7; /* Change border color on focus */
+}
+
 
 .todo-input-grid,
 .todo-grid {
