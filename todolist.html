@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title> Todo List</title>
     <link rel="stylesheet" href="todolist.css">
   </head>
   <body>
-    <p class="header">Todo List</p>
-
+    <header>
+      <h1 class="header">Todo List</h1>
+    </header>
+    <main>
     <div class="todo-input-grid">
       <input class="js-name-input name-input" placeholder="Todo name">
       <input type="date" class="js-due-date-input due-date-input" >  
@@ -14,7 +18,7 @@
     </div>
   
   <div class="js-todo-list todo-grid"></div>
-
+  </main>
   <script src="todolist.js"></script>
   </body>
 </html>
