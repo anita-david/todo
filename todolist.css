@@ -38,7 +38,7 @@ main {
 .todo-grid {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
   align-items: center;
   border-radius: 20px;
@@ -48,13 +48,13 @@ main {
 }
 
 .todo-input-grid input,
-.add-todo-button {
+.add-todo-button, .delete-todo-button {
   padding: 10px;
   border: none;
   border-radius: 20px;
 }
 
-.add-todo-button {
+.add-todo-button, .delete-todo-button {
   background-color: #673ab7;
   color: #fff;
   cursor: pointer;
