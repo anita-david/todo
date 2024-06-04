@@ -1,61 +1,66 @@
-body{
-  font-family:arial;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
-.todo-grid,
-.todo-input-grid{
-  display:grid;
-  grid-template-columns:200px 150px 100px;
-  column-gap:10px;
-  row-gap: 10px;
-  align-items:center;
-  border-color: white;
-  border-style: solid;
+
+header {
+  background-color: #673ab7;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.todo-input-grid,
+.todo-grid {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  align-items: center;
   border-radius: 20px;
-  background-color: rgb(252, 251, 252);
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.todo-input-grid{
-  margin-bottom:15px;
-  align-items:stretch;
-}
-.todo-grid{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.name-input, .due-date-input{
-  font-size:15px;
-  padding:6px;
-  border-radius: 20px;
-  border-color: rgb(241, 174, 241);
-  border-style: solid;
-}
-.add-todo-button{
-  background-color:rgb(241, 174, 241);
-  color:rgb(15, 15, 15);
-  border:none;
-  font-size:15px;
-  cursor:pointer;
-  border-radius: 20px;
-}
-.delete-todo-button{
-  background-color:rgb(241, 174, 241);
-  color:rgb(10, 10, 10);
-  border:none;
-  font-size:15px;
-  cursor:pointer;
-  padding-top: 10px;
-  padding-bottom:10px;
+
+.todo-input-grid input,
+.add-todo-button {
+  padding: 10px;
+  border: none;
   border-radius: 20px;
 }
 
-body{
-  width:100%;
-  min-height:100vh;
-  background-image: url(premium_photo-1675874973165-2c875c9ed382.avif);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display:flex;
-  justify-content: center;
+.add-todo-button {
+  background-color: #673ab7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.js-todo-list {
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-item button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
