@@ -19,9 +19,12 @@ main {
 .name-input, 
 .due-date-input {
   font-size: 15px;
-  padding: 6px;
-  border-radius: 20px;
-  border: 1px solid rgb(241, 174, 241); 
+  background-color: #673ab7;
+  color:white;
+}
+
+::placeholder {
+  color:white;
 }
 
 .name-input:focus, 
